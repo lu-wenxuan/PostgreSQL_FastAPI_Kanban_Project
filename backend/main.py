@@ -6,7 +6,7 @@ app = FastAPI()
 @app.get('/board')
 def get_board() : 
     board_data = { 
-        'task' : { 
+        'tasks' : { 
             "task-1" : {'id' : "task-1" , "content" : "created video"}, 
             "task-2" : {"id" : "task-2" , "content" : "edit video"}, 
         },
@@ -14,7 +14,7 @@ def get_board() :
             "column-1" : {
                 "id" : "column-1" , 
                 "title" : "todo" , 
-                "taskIds" : ["task-2" , "task1" ]
+                "taskIds" : ["task-2"]
             }, 
             "column-2" : { 
                 "id" : "column-2", 

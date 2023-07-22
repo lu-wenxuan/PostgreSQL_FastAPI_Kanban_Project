@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Baord from './components/Board';
+import Board from './components/Board';
 
 function App() {
   return(
     <div>
-      <Baord />
+      <Board>
+      </Board>
     </div>
   )
 }
